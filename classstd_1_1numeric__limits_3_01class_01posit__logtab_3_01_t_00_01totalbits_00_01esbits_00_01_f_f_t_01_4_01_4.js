@@ -1,0 +1,4 @@
+var classstd_1_1numeric__limits_3_01class_01posit__logtab_3_01_t_00_01totalbits_00_01esbits_00_01_f_f_t_01_4_01_4 =
+[
+    [ "qposit_logtab", "classstd_1_1numeric__limits_3_01class_01posit__logtab_3_01_t_00_01totalbits_00_01esbits_00_01_f_f_t_01_4_01_4.html#a0517401ae6610de6ac37bd9a509a8074", null ]
+];

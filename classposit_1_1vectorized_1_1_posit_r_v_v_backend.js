@@ -1,0 +1,28 @@
+var classposit_1_1vectorized_1_1_posit_r_v_v_backend =
+[
+    [ "PositInt", "classposit_1_1vectorized_1_1_posit_r_v_v_backend.html#ad8362b82d606814337497b99f8252f4b", null ],
+    [ "PositInt", "classposit_1_1vectorized_1_1_posit_r_v_v_backend.html#ad8362b82d606814337497b99f8252f4b", null ],
+    [ "PositUInt", "classposit_1_1vectorized_1_1_posit_r_v_v_backend.html#aae72413f43d2db6e5dd8f288f4e53a83", null ],
+    [ "PositUInt", "classposit_1_1vectorized_1_1_posit_r_v_v_backend.html#aae72413f43d2db6e5dd8f288f4e53a83", null ],
+    [ "vBuildPosit", "classposit_1_1vectorized_1_1_posit_r_v_v_backend.html#aaf4a3d540c5e000d5b03f465c68bc173", null ],
+    [ "vFastELU", "classposit_1_1vectorized_1_1_posit_r_v_v_backend.html#a5686233e7fe66dd1d40b5f1e0e93fb6b", null ],
+    [ "vFastELU", "classposit_1_1vectorized_1_1_posit_r_v_v_backend.html#a5686233e7fe66dd1d40b5f1e0e93fb6b", null ],
+    [ "vFastInv", "classposit_1_1vectorized_1_1_posit_r_v_v_backend.html#aba2ea97245cd5046d0129a418971a28f", null ],
+    [ "vFastInv", "classposit_1_1vectorized_1_1_posit_r_v_v_backend.html#aba2ea97245cd5046d0129a418971a28f", null ],
+    [ "vFastOneComp", "classposit_1_1vectorized_1_1_posit_r_v_v_backend.html#ad42171c7b9a79584326b778e87abf6c3", null ],
+    [ "vFastOneComp", "classposit_1_1vectorized_1_1_posit_r_v_v_backend.html#ad42171c7b9a79584326b778e87abf6c3", null ],
+    [ "vFastSigmoid", "classposit_1_1vectorized_1_1_posit_r_v_v_backend.html#a859e3ab62cf8b529c148bf03d8d8d72f", null ],
+    [ "vFastSigmoid", "classposit_1_1vectorized_1_1_posit_r_v_v_backend.html#a859e3ab62cf8b529c148bf03d8d8d72f", null ],
+    [ "vFastTanh", "classposit_1_1vectorized_1_1_posit_r_v_v_backend.html#a2d0ae27da02d5dec39a1d179616902a1", null ],
+    [ "vFastTanh", "classposit_1_1vectorized_1_1_posit_r_v_v_backend.html#a2d0ae27da02d5dec39a1d179616902a1", null ],
+    [ "vFastTwice", "classposit_1_1vectorized_1_1_posit_r_v_v_backend.html#a77e46eacd2f4b4ae0a281b70e8efde38", null ],
+    [ "vFastTwice", "classposit_1_1vectorized_1_1_posit_r_v_v_backend.html#a77e46eacd2f4b4ae0a281b70e8efde38", null ],
+    [ "vFloat2Posit", "classposit_1_1vectorized_1_1_posit_r_v_v_backend.html#ae016ddd69f01814e760dc2cbac301282", null ],
+    [ "vFloat2Posit", "classposit_1_1vectorized_1_1_posit_r_v_v_backend.html#ae016ddd69f01814e760dc2cbac301282", null ],
+    [ "vFloat2Posit", "classposit_1_1vectorized_1_1_posit_r_v_v_backend.html#a81f3f925a1572308c117447952aaea81", null ],
+    [ "vFloat2Posit", "classposit_1_1vectorized_1_1_posit_r_v_v_backend.html#a81f3f925a1572308c117447952aaea81", null ],
+    [ "vPosit2Float", "classposit_1_1vectorized_1_1_posit_r_v_v_backend.html#a12dbde7460b665cf36c9a5a1c4889e7c", null ],
+    [ "vPosit2Float", "classposit_1_1vectorized_1_1_posit_r_v_v_backend.html#a12dbde7460b665cf36c9a5a1c4889e7c", null ],
+    [ "vPosit2Float", "classposit_1_1vectorized_1_1_posit_r_v_v_backend.html#a08f4e210b3e7da6be34b496878a1c1c1", null ],
+    [ "vPosit2Float", "classposit_1_1vectorized_1_1_posit_r_v_v_backend.html#a08f4e210b3e7da6be34b496878a1c1c1", null ]
+];

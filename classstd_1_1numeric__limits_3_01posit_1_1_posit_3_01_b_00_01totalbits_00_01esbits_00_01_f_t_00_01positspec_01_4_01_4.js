@@ -1,0 +1,5 @@
+var classstd_1_1numeric__limits_3_01posit_1_1_posit_3_01_b_00_01totalbits_00_01esbits_00_01_f_t_00_01positspec_01_4_01_4 =
+[
+    [ "PT", "classstd_1_1numeric__limits_3_01posit_1_1_posit_3_01_b_00_01totalbits_00_01esbits_00_01_f_t_00_01positspec_01_4_01_4.html#a57657be5d8c1df380629c0c7e6b9fe3a", null ],
+    [ "T", "classstd_1_1numeric__limits_3_01posit_1_1_posit_3_01_b_00_01totalbits_00_01esbits_00_01_f_t_00_01positspec_01_4_01_4.html#adfd8165fc36d8eb1ef15812b95752af3", null ]
+];

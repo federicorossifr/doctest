@@ -1,0 +1,28 @@
+var classposit_1_1vectorized_1_1_posit_s_v_e_backend =
+[
+    [ "PositInt", "classposit_1_1vectorized_1_1_posit_s_v_e_backend.html#a91ed49a96cb42f212a4bc9f47d8bb855", null ],
+    [ "PositUInt", "classposit_1_1vectorized_1_1_posit_s_v_e_backend.html#a5ea259df39ab7b1f757420eae29b54e3", null ],
+    [ "svint", "classposit_1_1vectorized_1_1_posit_s_v_e_backend.html#a97d034736f313d77e5c421fbe335457a", null ],
+    [ "svuint", "classposit_1_1vectorized_1_1_posit_s_v_e_backend.html#a24c3113115db57bb76d4cb90e507659a", null ],
+    [ "float2posit", "classposit_1_1vectorized_1_1_posit_s_v_e_backend.html#aa64c6f2ad662573709efce67620e2f98", null ],
+    [ "PICK_SVE_FUN_SIZE_DEP", "classposit_1_1vectorized_1_1_posit_s_v_e_backend.html#abc771f52542326cec0fa746ae87ec0ab", null ],
+    [ "PICK_SVE_FUN_SIZE_DEP", "classposit_1_1vectorized_1_1_posit_s_v_e_backend.html#a324c181f6c4b1f3701820040c312444e", null ],
+    [ "PICK_SVE_FUN_SIZE_DEP", "classposit_1_1vectorized_1_1_posit_s_v_e_backend.html#a55121003be24c7308a35540f578a564d", null ],
+    [ "PICK_SVE_FUN_SIZE_DEP", "classposit_1_1vectorized_1_1_posit_s_v_e_backend.html#a482b53d7a09b69a610b3658575fa5261", null ],
+    [ "PICK_SVE_FUN_SIZE_DEP", "classposit_1_1vectorized_1_1_posit_s_v_e_backend.html#a54e16523cfe73ab87678058147786fdc", null ],
+    [ "PICK_SVE_FUN_SIZE_DEP", "classposit_1_1vectorized_1_1_posit_s_v_e_backend.html#a5f14f520a935cf145898f6850d6eb513", null ],
+    [ "posit2float", "classposit_1_1vectorized_1_1_posit_s_v_e_backend.html#a06e3af376956037f76db838ddac88453", null ],
+    [ "sv_conv3x3", "classposit_1_1vectorized_1_1_posit_s_v_e_backend.html#a7bfc9809120994427cfc57592eb7b915", null ],
+    [ "vAdd", "classposit_1_1vectorized_1_1_posit_s_v_e_backend.html#aa6e10ece7c97ecc4cb5b504fed23ea08", null ],
+    [ "vDot", "classposit_1_1vectorized_1_1_posit_s_v_e_backend.html#a40650f4c4d48f1404b11f09c49cbc510", null ],
+    [ "vFastELU", "classposit_1_1vectorized_1_1_posit_s_v_e_backend.html#ae698d480e6196b58611d893ed0c4f8ac", null ],
+    [ "vFastInv", "classposit_1_1vectorized_1_1_posit_s_v_e_backend.html#a8b31f9f50d0c6c4fe5adcdf8fb94a056", null ],
+    [ "vFastOneComp", "classposit_1_1vectorized_1_1_posit_s_v_e_backend.html#a3c4f46b5344f823b4a7d2343164e08ab", null ],
+    [ "vFastSigmoid", "classposit_1_1vectorized_1_1_posit_s_v_e_backend.html#addc7c2c9d6e2a8b1295ec4aab7cabf7c", null ],
+    [ "vFastTanh", "classposit_1_1vectorized_1_1_posit_s_v_e_backend.html#ae0a75749808b22bf81bc630ae24fadb8", null ],
+    [ "vFastTwice", "classposit_1_1vectorized_1_1_posit_s_v_e_backend.html#a784c8be823579f89a3f5aabab76f9e93", null ],
+    [ "vGemm", "classposit_1_1vectorized_1_1_posit_s_v_e_backend.html#a7ef42bf2f99075fc9ffc278ec628646e", null ],
+    [ "vMaxPool3f", "classposit_1_1vectorized_1_1_posit_s_v_e_backend.html#a4149432bb71195245f218dfe7504942b", null ],
+    [ "vMul", "classposit_1_1vectorized_1_1_posit_s_v_e_backend.html#ac4c954086bd787f24b718c0a6501c97f", null ],
+    [ "vMuladd", "classposit_1_1vectorized_1_1_posit_s_v_e_backend.html#a503d5fbd53f3722e32d5a8ff11290216", null ]
+];
