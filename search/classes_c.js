@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['raw_5ftag_282',['raw_tag',['../structposit_1_1_backend_fixed_1_1raw__tag.html',1,'posit::BackendFixed']]]
+  ['raw_5ftag_284',['raw_tag',['../structposit_1_1_backend_fixed_1_1raw__tag.html',1,'posit::BackendFixed']]]
 ];

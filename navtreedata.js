@@ -25,6 +25,8 @@
 var NAVTREE =
 [
   [ "cppPosit", "index.html", [
+    [ "Examples", "examples.html", null ],
+    [ "First steps", "installation.html", null ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
@@ -55,10 +57,10 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"01_basic_8cpp-example.html",
-"namespacemembers_func.html",
-"structposit_1_1_backend_fixed.html#a366d61ee546e447c8d3ce9f8ed111b4c",
-"structunsigned128.html#a22dcf92513f1251626a7955dc05dc7bd"
+"",
+"installation.html",
+"structnextinttype_3_01uint64__t_01_4.html",
+"structstd_1_1numeric__limits_3_01softfloat32_01_4.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
