@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['negativesign_371',['negativeSign',['../structposit_1_1_unpacked_posit.html#a41edbfe22ad54017d4f0373c1e002273',1,'posit::UnpackedPosit']]]
+  ['negativesign_357',['negativeSign',['../structposit_1_1_unpacked_posit.html#a41edbfe22ad54017d4f0373c1e002273',1,'posit::UnpackedPosit']]]
 ];

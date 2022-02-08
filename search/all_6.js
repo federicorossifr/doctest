@@ -12,12 +12,13 @@ var searchData=
   ['float2trait_3c_20halffloatalt_20_3e_40',['float2trait&lt; halffloatalt &gt;',['../structfloat2trait_3_01halffloatalt_01_4.html',1,'']]],
   ['float_5funion_41',['float_union',['../unionfloat__union.html',1,'']]],
   ['fma_42',['fma',['../classposit_1_1_posit.html#a2ceff13a8e06a90c6c0e79a6a94fdaf2',1,'posit::Posit']]],
-  ['fraction_43',['fraction',['../structposit_1_1_unpacked_posit.html#a1cd92d00750d23436de61ba05b82341f',1,'posit::UnpackedPosit']]],
-  ['fraction_5fbit_5fextract_44',['fraction_bit_extract',['../structposit_1_1fraction__bit__extract.html',1,'posit']]],
-  ['fraction_5fbit_5fextract_3c_20abits_2c_20at_2c_20bbits_2c_20bt_2c_20false_2c_20msb_20_3e_45',['fraction_bit_extract&lt; abits, AT, bbits, BT, false, msb &gt;',['../structposit_1_1fraction__bit__extract_3_01abits_00_01_a_t_00_01bbits_00_01_b_t_00_01false_00_01msb_01_4.html',1,'posit']]],
-  ['fraction_5fbit_5fextract_3c_20abits_2c_20at_2c_20bbits_2c_20bt_2c_20true_2c_20msb_20_3e_46',['fraction_bit_extract&lt; abits, AT, bbits, BT, true, msb &gt;',['../structposit_1_1fraction__bit__extract_3_01abits_00_01_a_t_00_01bbits_00_01_b_t_00_01true_00_01msb_01_4.html',1,'posit']]],
-  ['from_5ffloatval_47',['from_floatval',['../classposit_1_1_posit.html#aa0e1bfcf245542e977c74cfc5ad9aacb',1,'posit::Posit']]],
-  ['from_5fsraw_48',['from_sraw',['../classposit_1_1_posit.html#a17b7c060fae0daa67cc98966252ed5af',1,'posit::Posit']]],
-  ['from_5furaw_49',['from_uraw',['../classposit_1_1_posit.html#a1f1da73b7d51b121931499f83ec1f4d3',1,'posit::Posit']]],
-  ['fullwriter_50',['FullWriter',['../structanyfloat__emu_1_1_full_writer.html',1,'anyfloat_emu']]]
+  ['fma_5fdot_43',['fma_dot',['../namespaceposit_1_1math.html#adb15a3b31431804a89b7d6528585e9d6',1,'posit::math']]],
+  ['fraction_44',['fraction',['../structposit_1_1_unpacked_posit.html#a1cd92d00750d23436de61ba05b82341f',1,'posit::UnpackedPosit']]],
+  ['fraction_5fbit_5fextract_45',['fraction_bit_extract',['../structposit_1_1fraction__bit__extract.html',1,'posit']]],
+  ['fraction_5fbit_5fextract_3c_20abits_2c_20at_2c_20bbits_2c_20bt_2c_20false_2c_20msb_20_3e_46',['fraction_bit_extract&lt; abits, AT, bbits, BT, false, msb &gt;',['../structposit_1_1fraction__bit__extract_3_01abits_00_01_a_t_00_01bbits_00_01_b_t_00_01false_00_01msb_01_4.html',1,'posit']]],
+  ['fraction_5fbit_5fextract_3c_20abits_2c_20at_2c_20bbits_2c_20bt_2c_20true_2c_20msb_20_3e_47',['fraction_bit_extract&lt; abits, AT, bbits, BT, true, msb &gt;',['../structposit_1_1fraction__bit__extract_3_01abits_00_01_a_t_00_01bbits_00_01_b_t_00_01true_00_01msb_01_4.html',1,'posit']]],
+  ['from_5ffloatval_48',['from_floatval',['../classposit_1_1_posit.html#aa0e1bfcf245542e977c74cfc5ad9aacb',1,'posit::Posit']]],
+  ['from_5fsraw_49',['from_sraw',['../classposit_1_1_posit.html#a17b7c060fae0daa67cc98966252ed5af',1,'posit::Posit']]],
+  ['from_5furaw_50',['from_uraw',['../classposit_1_1_posit.html#a1f1da73b7d51b121931499f83ec1f4d3',1,'posit::Posit']]],
+  ['fullwriter_51',['FullWriter',['../structanyfloat__emu_1_1_full_writer.html',1,'anyfloat_emu']]]
 ];

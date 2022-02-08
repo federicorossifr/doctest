@@ -86,19 +86,11 @@ $(document).ready(function(){initNavTree('09_fft_8cpp-example.html',''); initRes
 <div class="title">09_fft.cpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;math.h&gt;</span></div>
-<div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span></div>
-<div class="line"><span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span></div>
 <div class="line"> </div>
-<div class="line"><span class="preprocessor">#define POSIT</span></div>
-<div class="line"> </div>
-<div class="line"><span class="preprocessor">#ifndef POSIT </span></div>
-<div class="line"><span class="keyword">typedef</span> <span class="keywordtype">double</span> real;</div>
-<div class="line"><span class="preprocessor">#else</span></div>
 <div class="line"><span class="preprocessor">#include &quot;posit.h&quot;</span></div>
-<div class="line"><span class="preprocessor">#pragma message &quot;using posits&quot;</span></div>
-<div class="line"><span class="keyword">typedef</span> <a name="_a0"></a><a class="code" href="classposit_1_1_posit.html">posit::Posit&lt;int16_t,16,1,uint16_t,posit::PositSpec::WithNan&gt;</a> real;</div>
-<div class="line"><span class="preprocessor">#endif </span></div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">typedef</span> <a name="_a0"></a><a class="code" href="classposit_1_1_posit.html">posit::Posit&lt;int32_t,32,2,uint32_t,posit::PositSpec::WithNan&gt;</a> real;</div>
 <div class="line"> </div>
 <div class="line"><span class="preprocessor">#define points 8 </span><span class="comment">/* for 2^8 = 256 points */</span><span class="preprocessor"></span></div>
 <div class="line"><span class="preprocessor">#define N (1 &lt;&lt; points) </span><span class="comment">/* N-point FFT */</span><span class="preprocessor"></span></div>
@@ -126,8 +118,8 @@ $(document).ready(function(){initNavTree('09_fft_8cpp-example.html',''); initRes
 <div class="line">    fft(ve, n / 2, wave); <span class="comment">// FFT on even-indexed elements of wave[]</span></div>
 <div class="line">    fft(vo, n / 2, wave); <span class="comment">// FFT on odd-indexed elements of wave[]</span></div>
 <div class="line">    <span class="keywordflow">for</span> (m = 0; m &lt; n / 2; m++) {</div>
-<div class="line">      w.Re = real(cos(<span class="keywordtype">double</span>(real(2) * PI * real(m) / real(n))));</div>
-<div class="line">      w.Im = real(-sin(<span class="keywordtype">double</span>(real(2) * PI * real(m) / real(n))));</div>
+<div class="line">      w.Re = (std::cos((real(2) * PI * real(m) / real(n))));</div>
+<div class="line">      w.Im = -(std::sin((real(2) * PI * real(m) / real(n))));</div>
 <div class="line">      z.Re = w.Re * vo[m].Re - w.Im * vo[m].Im; <span class="comment">/* Re(w*vo[m]) */</span></div>
 <div class="line">      z.Im = w.Re * vo[m].Im + w.Im * vo[m].Re; <span class="comment">/* Im(w*vo[m]) */</span></div>
 <div class="line">      wave[m].Re = ve[m].Re + z.Re;</div>
@@ -145,25 +137,25 @@ $(document).ready(function(){initNavTree('09_fft_8cpp-example.html',''); initRes
 <div class="line">  <span class="keywordtype">int</span> k;</div>
 <div class="line">  <span class="comment">/* Fill wave[] as the sum of two pure sine waves of known frequency */</span></div>
 <div class="line">  <span class="keywordflow">for</span> (k = 0; k &lt; N; k++) {</div>
-<div class="line">     wave[k].Re = real(0.125 * cos(<span class="keywordtype">double</span>(real(2) * PI * real(k) / real(N))) + 0.5 * cos(<span class="keywordtype">double</span>(real(2) * PI * real(10*k) / real(N))));</div>
-<div class="line">     wave[k].Im = real(0.125 * sin(<span class="keywordtype">double</span>(real(2) * PI * real(k) / real(N))) + 0.5 * cos(<span class="keywordtype">double</span>(real(2) * PI * real(10*k) / real(N))));</div>
+<div class="line">     wave[k].Re = real(0.125) * std::cos((real(2) * PI * real(k) / real(N))) + real(0.5) * std::cos((real(2) * PI * real(10*k) / real(N)));</div>
+<div class="line">     wave[k].Im = real(0.125) * std::sin((real(2) * PI * real(k) / real(N))) + real(0.5) * std::cos((real(2) * PI * real(10*k) / real(N)));</div>
 <div class="line">  }</div>
 <div class="line">  <span class="comment">/* Printing the generated signal (for reading it in Matlab)*/</span></div>
-<div class="line">  printf(<span class="stringliteral">&quot;wave = [\n&quot;</span>);</div>
+<div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot;wave = [\n&quot;</span>;</div>
 <div class="line">  <span class="keywordflow">for</span> (k = 0; k &lt; N; k++) {</div>
 <div class="line">     std::cout &lt;&lt; wave[k].Re &lt;&lt; <span class="stringliteral">&quot;+&quot;</span> &lt;&lt; wave[k].Im &lt;&lt;<span class="stringliteral">&quot;i&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line">  }</div>
-<div class="line">  printf(<span class="stringliteral">&quot;]; \n\n&quot;</span>);</div>
-<div class="line">  printf(<span class="stringliteral">&quot;Computing the FFT...\n&quot;</span>);</div>
+<div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot;]; \n\n&quot;</span>;</div>
+<div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot;Computing the FFT...\n&quot;</span>;</div>
 <div class="line">  fft(wave, N, scratch); <span class="comment">// Perform FFT, wave will have the result.</span></div>
-<div class="line">  printf(<span class="stringliteral">&quot;Printing the module of the obtained FFT coefficients:\n\nabs_FFT = [\n&quot;</span>);</div>
+<div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot;Printing the module of the obtained FFT coefficients:\n\nabs_FFT = [\n&quot;</span>;</div>
 <div class="line">  <span class="keywordflow">for</span> (k = 0; k &lt; N; k++) {</div>
-<div class="line">     std::cout &lt;&lt; sqrt(<span class="keywordtype">double</span>(wave[k].Re*wave[k].Re+wave[k].Im*wave[k].Im)) &lt;&lt; std::endl;</div>
+<div class="line">     std::cout &lt;&lt; std::sqrt((wave[k].Re*wave[k].Re+wave[k].Im*wave[k].Im)) &lt;&lt; std::endl;</div>
 <div class="line">  }</div>
-<div class="line">  printf(<span class="stringliteral">&quot;];\n\nDone. Check whether the second module is 32 and the 11th is 128\n&quot;</span>);</div>
-<div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot;2th: &quot;</span> &lt;&lt; sqrt(<span class="keywordtype">double</span>(wave[1].Re*wave[1].Re+wave[1].Im*wave[1].Im)) &lt;&lt; std::endl;</div>
-<div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot;11th: &quot;</span> &lt;&lt; sqrt(<span class="keywordtype">double</span>(wave[10].Re*wave[10].Re+wave[10].Im*wave[10].Im)) &lt;&lt; std::endl;</div>
-<div class="line">  printf(<span class="stringliteral">&quot;(all the others must be zero, or close to zero)\n\n&quot;</span>);</div>
+<div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot;];\n\nDone. Check whether the second module is 32 and the 11th is 128\n&quot;</span>;</div>
+<div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot;2th: &quot;</span> &lt;&lt; std::sqrt((wave[1].Re*wave[1].Re+wave[1].Im*wave[1].Im)) &lt;&lt; std::endl;</div>
+<div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot;11th: &quot;</span> &lt;&lt; std::sqrt((wave[10].Re*wave[10].Re+wave[10].Im*wave[10].Im)) &lt;&lt; std::endl;</div>
+<div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot;(all the others must be zero, or close to zero)\n\n&quot;</span>;</div>
 <div class="line">  </div>
 <div class="line">  <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
