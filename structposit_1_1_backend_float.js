@@ -17,6 +17,5 @@ var structposit_1_1_backend_float =
     [ "operator+", "structposit_1_1_backend_float.html#a6194c14397a267b341f32b5f39a638e9", null ],
     [ "operator-", "structposit_1_1_backend_float.html#a979e8ab898acd696c451e7840e7f6436", null ],
     [ "operator/", "structposit_1_1_backend_float.html#a2ee387dbdb60581f80d2cd76a7ed5f87", null ],
-    [ "reciprocate", "structposit_1_1_backend_float.html#a99e849f325c8f465a86ca0d3e29a2e0f", null ],
     [ "v", "structposit_1_1_backend_float.html#afd30dc7418d2880136aa2c7f20a91c63", null ]
 ];

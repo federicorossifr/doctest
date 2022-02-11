@@ -57,10 +57,10 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"",
-"installation.html",
-"structnextinttype_3_01uint64__t_01_4.html",
-"structstd_1_1numeric__limits_3_01softfloat32_01_4.html"
+"01_basic_8cpp-example.html",
+"floattraits_8hpp_source.html",
+"structposit_1_1_backend_fixed_1_1raw__tag.html",
+"typehelpers_8hpp_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

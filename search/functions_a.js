@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['neg_326',['neg',['../classposit_1_1_posit.html#aba0cb3275320a1d8ab865ca8132bc963',1,'posit::Posit']]],
-  ['next_327',['next',['../classposit_1_1_posit.html#a391d9676e268a3b467b51f87ea85c2bb',1,'posit::Posit']]]
+  ['neg_328',['neg',['../classposit_1_1_posit.html#aba0cb3275320a1d8ab865ca8132bc963',1,'posit::Posit']]],
+  ['next_329',['next',['../classposit_1_1_posit.html#a391d9676e268a3b467b51f87ea85c2bb',1,'posit::Posit']]]
 ];

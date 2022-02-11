@@ -153,6 +153,15 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structposit_1_1_posit_packer_3_01_p_t_00_01_backend_fixed_3_01_f_t_00_01typename_01_p_t_1_1exponenttype_01_4_01_4.html">PositPacker&lt; PT, BackendFixed&lt; FT, typename PT::exponenttype &gt; &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structposit_1_1msb__exp.html">msb_exp</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">helper class  <a href="structposit_1_1msb__exp.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structposit_1_1msb__exp_3_01_t_00_01hbits_00_01ebits_00_01true_01_4.html">msb_exp&lt; T, hbits, ebits, true &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">helper class  <a href="structposit_1_1msb__exp_3_01_t_00_01hbits_00_01ebits_00_01true_01_4.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structposit_1_1msb__exp_3_01_t_00_01hbits_00_01ebits_00_01false_01_4.html">msb_exp&lt; T, hbits, ebits, false &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">helper class  <a href="structposit_1_1msb__exp_3_01_t_00_01hbits_00_01ebits_00_01false_01_4.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structposit_1_1_unpacked.html">Unpacked</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">signed infinity and nan require the extra X bit  <a href="structposit_1_1_unpacked.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -185,14 +194,14 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a2836fe21e3c283a8c6ee90422fdc5d9c"><td class="memTemplParams" colspan="2"><a id="a2836fe21e3c283a8c6ee90422fdc5d9c"></a>
-template&lt;class T , int totalbits, int esbits, class FT , PositSpec positspec&gt; </td></tr>
-<tr class="memitem:a2836fe21e3c283a8c6ee90422fdc5d9c"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>unpack_posit</b> (const <a class="el" href="classposit_1_1_posit.html">Posit</a>&lt; T, totalbits, esbits, FT, positspec &gt; &amp;p) -&gt; typename <a class="el" href="classposit_1_1_posit.html">Posit</a>&lt; T, totalbits, esbits, FT, positspec &gt;::BackendT</td></tr>
+<tr class="memitem:a2836fe21e3c283a8c6ee90422fdc5d9c"><td class="memTemplParams" colspan="2">template&lt;class T , int totalbits, int esbits, class FT , PositSpec positspec&gt; </td></tr>
+<tr class="memitem:a2836fe21e3c283a8c6ee90422fdc5d9c"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceposit.html#a2836fe21e3c283a8c6ee90422fdc5d9c">unpack_posit</a> (const <a class="el" href="classposit_1_1_posit.html">Posit</a>&lt; T, totalbits, esbits, FT, positspec &gt; &amp;p) -&gt; typename <a class="el" href="classposit_1_1_posit.html">Posit</a>&lt; T, totalbits, esbits, FT, positspec &gt;::BackendT</td></tr>
+<tr class="memdesc:a2836fe21e3c283a8c6ee90422fdc5d9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unpack from Backend to <a class="el" href="classposit_1_1_posit.html" title="Posit value type Stores the posit in the LSB part of the holding type T as signed integer.">Posit</a> passing throught the <a class="el" href="structposit_1_1_unpacked.html" title="signed infinity and nan require the extra X bit">Unpacked</a> form.  <a href="namespaceposit.html#a2836fe21e3c283a8c6ee90422fdc5d9c">More...</a><br /></td></tr>
 <tr class="separator:a2836fe21e3c283a8c6ee90422fdc5d9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d9dc0a62df682c4e895cc9db856b16e"><td class="memTemplParams" colspan="2"><a id="a5d9dc0a62df682c4e895cc9db856b16e"></a>
-template&lt;class T , int totalbits, int esbits, class FT , PositSpec positspec&gt; </td></tr>
-<tr class="memitem:a5d9dc0a62df682c4e895cc9db856b16e"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classposit_1_1_posit.html">Posit</a>&lt; T, totalbits, esbits, FT, positspec &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>pack_posit</b> (const typename <a class="el" href="classposit_1_1_posit.html">Posit</a>&lt; T, totalbits, esbits, FT, positspec &gt;::BackendT &amp;x)</td></tr>
-<tr class="separator:a5d9dc0a62df682c4e895cc9db856b16e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80b18d69e7a6152c1a9004f8ad1ed44f"><td class="memTemplParams" colspan="2">template&lt;class T , int totalbits, int esbits, class FT , PositSpec positspec&gt; </td></tr>
+<tr class="memitem:a80b18d69e7a6152c1a9004f8ad1ed44f"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classposit_1_1_posit.html">Posit</a>&lt; T, totalbits, esbits, FT, positspec &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceposit.html#a80b18d69e7a6152c1a9004f8ad1ed44f">pack_posit</a> (const typename <a class="el" href="classposit_1_1_posit.html">Posit</a>&lt; T, totalbits, esbits, FT, positspec &gt;::BackendT &amp;x)</td></tr>
+<tr class="memdesc:a80b18d69e7a6152c1a9004f8ad1ed44f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Packs from Backend to <a class="el" href="classposit_1_1_posit.html" title="Posit value type Stores the posit in the LSB part of the holding type T as signed integer.">Posit</a> passing throught the <a class="el" href="structposit_1_1_unpacked.html" title="signed infinity and nan require the extra X bit">Unpacked</a> form.  <a href="namespaceposit.html#a80b18d69e7a6152c1a9004f8ad1ed44f">More...</a><br /></td></tr>
+<tr class="separator:a80b18d69e7a6152c1a9004f8ad1ed44f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa51b936fd8c49075b39b5a4bcc3bd20b"><td class="memTemplParams" colspan="2"><a id="aa51b936fd8c49075b39b5a4bcc3bd20b"></a>
 template&lt;class B &gt; </td></tr>
 <tr class="memitem:aa51b936fd8c49075b39b5a4bcc3bd20b"><td class="memTemplItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator&lt;&lt;</b> (std::ostream &amp;ons, <a class="el" href="structposit_1_1_backend_float.html">BackendFloat</a>&lt; B &gt; const &amp;o)</td></tr>
@@ -201,21 +210,26 @@ template&lt;class B &gt; </td></tr>
 template&lt;class FT , class ET &gt; </td></tr>
 <tr class="memitem:a1b5d67076d322e95f037e27f0521f93d"><td class="memTemplItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator&lt;&lt;</b> (std::ostream &amp;ons, <a class="el" href="structposit_1_1_backend_fixed.html">BackendFixed</a>&lt; FT, ET &gt; const &amp;o)</td></tr>
 <tr class="separator:a1b5d67076d322e95f037e27f0521f93d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3941a776c665e080754597695186ad0"><td class="memTemplParams" colspan="2">template&lt;class T , int totalbits, int esbits, class FT , PositSpec positspec&gt; </td></tr>
-<tr class="memitem:aa3941a776c665e080754597695186ad0"><td class="memTemplItemLeft" align="right" valign="top">class <a class="el" href="classposit_1_1_posit.html">posit::Posit</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceposit.html#aa3941a776c665e080754597695186ad0">reciprocate</a> () const</td></tr>
-<tr class="memdesc:aa3941a776c665e080754597695186ad0"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns 1/x as Level 1 Special Cases: zero should give positive infinity, if present, nan otherwise nan should be nan, if present +inf/-inf should give zero, if present before0,after0 should give infinity, if present  <a href="namespaceposit.html#aa3941a776c665e080754597695186ad0">More...</a><br /></td></tr>
-<tr class="separator:aa3941a776c665e080754597695186ad0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3edd6244b7b82a9bb29c5400e49a6c86"><td class="memItemLeft" align="right" valign="top"><a id="a3edd6244b7b82a9bb29c5400e49a6c86"></a>
-<a class="el" href="classposit_1_1_posit.html">Posit</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceposit.html#a3edd6244b7b82a9bb29c5400e49a6c86">relu</a> (const <a class="el" href="classposit_1_1_posit.html">Posit</a> &amp;a)</td></tr>
-<tr class="memdesc:a3edd6244b7b82a9bb29c5400e49a6c86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Relu Activation function (Level 1) Returns 0 for negative and not nan, otherwise identity. <br /></td></tr>
-<tr class="separator:a3edd6244b7b82a9bb29c5400e49a6c86"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf755906105a7b4e9cfbbff0ae91e023"><td class="memItemLeft" align="right" valign="top">constexpr uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceposit.html#aaf755906105a7b4e9cfbbff0ae91e023">as_float_bin</a> () const</td></tr>
-<tr class="separator:aaf755906105a7b4e9cfbbff0ae91e023"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fdf36d408be62a54199a37445704075"><td class="memTemplParams" colspan="2">template&lt;class T , int totalbits, int esbits, class FT , PositSpec positspec&gt; </td></tr>
+<tr class="memitem:a0fdf36d408be62a54199a37445704075"><td class="memTemplItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceposit.html#a0fdf36d408be62a54199a37445704075">operator&lt;&lt;</a> (std::ostream &amp;ons, <a class="el" href="classposit_1_1_posit.html">Posit</a>&lt; T, totalbits, esbits, FT, positspec &gt; const &amp;o)</td></tr>
+<tr class="separator:a0fdf36d408be62a54199a37445704075"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb42b29d22411188020c9bc3e37dfe2b"><td class="memTemplParams" colspan="2"><a id="aeb42b29d22411188020c9bc3e37dfe2b"></a>
+template&lt;class T , int totalbits, int esbits, class FT , PositSpec positspec&gt; </td></tr>
+<tr class="memitem:aeb42b29d22411188020c9bc3e37dfe2b"><td class="memTemplItemLeft" align="right" valign="top">constexpr <a class="el" href="classposit_1_1_posit.html">Posit</a>&lt; T, totalbits, esbits, FT, positspec &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>neg</b> (<a class="el" href="classposit_1_1_posit.html">Posit</a>&lt; T, totalbits, esbits, FT, positspec &gt; x)</td></tr>
+<tr class="separator:aeb42b29d22411188020c9bc3e37dfe2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49c561cc521e9aea44e47018cfa9b917"><td class="memTemplParams" colspan="2"><a id="a49c561cc521e9aea44e47018cfa9b917"></a>
+template&lt;class T , int totalbits, int esbits, class FT , PositSpec positspec&gt; </td></tr>
+<tr class="memitem:a49c561cc521e9aea44e47018cfa9b917"><td class="memTemplItemLeft" align="right" valign="top">constexpr <a class="el" href="classposit_1_1_posit.html">Posit</a>&lt; T, totalbits, esbits, FT, positspec &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>reciprocate</b> (<a class="el" href="classposit_1_1_posit.html">Posit</a>&lt; T, totalbits, esbits, FT, positspec &gt; x)</td></tr>
+<tr class="separator:a49c561cc521e9aea44e47018cfa9b917"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87f62b84d1a71e1a3038ee87e49e1f57"><td class="memTemplParams" colspan="2">template&lt;class T , int totalbits, int esbits, class FT , PositSpec positspec&gt; </td></tr>
+<tr class="memitem:a87f62b84d1a71e1a3038ee87e49e1f57"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classposit_1_1_posit.html">Posit</a>&lt; T, totalbits, esbits, FT, positspec &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceposit.html#a87f62b84d1a71e1a3038ee87e49e1f57">abs</a> (const <a class="el" href="classposit_1_1_posit.html">Posit</a>&lt; T, totalbits, esbits, FT, positspec &gt; &amp;z)</td></tr>
+<tr class="memdesc:a87f62b84d1a71e1a3038ee87e49e1f57"><td class="mdescLeft">&#160;</td><td class="mdescRight">Absolute value of <a class="el" href="classposit_1_1_posit.html" title="Posit value type Stores the posit in the LSB part of the holding type T as signed integer.">Posit</a>.  <a href="namespaceposit.html#a87f62b84d1a71e1a3038ee87e49e1f57">More...</a><br /></td></tr>
+<tr class="separator:a87f62b84d1a71e1a3038ee87e49e1f57"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14daa38ceae818db55ac0492d4b41315"><td class="memItemLeft" align="right" valign="top"><a id="a14daa38ceae818db55ac0492d4b41315"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>REGISTER_CMATH_FUN</b> (exp)</td></tr>
 <tr class="separator:a14daa38ceae818db55ac0492d4b41315"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69dab163c5f3a3f0876b0fdfe59f87fe"><td class="memItemLeft" align="right" valign="top"><a id="a69dab163c5f3a3f0876b0fdfe59f87fe"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>REGISTER_CMATH_FUN</b> (<a class="el" href="namespaceposit.html#abde5164a6460f5b629b62b64d76b0130">log</a>)</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><b>REGISTER_CMATH_FUN</b> (log)</td></tr>
 <tr class="separator:a69dab163c5f3a3f0876b0fdfe59f87fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9220c07434e2a844d2cf502bf82c4bb4"><td class="memItemLeft" align="right" valign="top"><a id="a9220c07434e2a844d2cf502bf82c4bb4"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>REGISTER_CMATH_FUN</b> (log1p)</td></tr>
@@ -291,87 +305,6 @@ template&lt;class T &gt; </td></tr>
 template&lt;class SrcTrait , class DstTrait , class FT &gt; </td></tr>
 <tr class="memitem:a098a268b4d98b2fc7a8a462fd96028cf"><td class="memTemplItemLeft" align="right" valign="top">constexpr DstTrait::holder_t&#160;</td><td class="memTemplItemRight" valign="bottom"><b>convertfloats</b> (typename SrcTrait::holder_t src)</td></tr>
 <tr class="separator:a098a268b4d98b2fc7a8a462fd96028cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><div class="groupHeader">Special Constants</div></td></tr>
-<tr><td colspan="2"><div class="groupHeader">Type casts</div></td></tr>
-<tr class="memitem:a562918f9244bdee0ac8d2669793d649b"><td class="memItemLeft" align="right" valign="top"><a id="a562918f9244bdee0ac8d2669793d649b"></a>
-constexpr&#160;</td><td class="memItemRight" valign="bottom"><b>operator BackendT</b> () const</td></tr>
-<tr class="separator:a562918f9244bdee0ac8d2669793d649b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa6f5ab2002d10a554e5b972437ec34a4"><td class="memItemLeft" align="right" valign="top"><a id="aa6f5ab2002d10a554e5b972437ec34a4"></a>
-constexpr&#160;</td><td class="memItemRight" valign="bottom"><b>operator float</b> () const</td></tr>
-<tr class="separator:aa6f5ab2002d10a554e5b972437ec34a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a594c84c1c7121f150728da019b4a0823"><td class="memItemLeft" align="right" valign="top"><a id="a594c84c1c7121f150728da019b4a0823"></a>
-constexpr&#160;</td><td class="memItemRight" valign="bottom"><b>operator double</b> () const</td></tr>
-<tr class="separator:a594c84c1c7121f150728da019b4a0823"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9add5e221c4d78ed8c29551bd91faab"><td class="memItemLeft" align="right" valign="top"><a id="ad9add5e221c4d78ed8c29551bd91faab"></a>
-constexpr&#160;</td><td class="memItemRight" valign="bottom"><b>operator int</b> () const</td></tr>
-<tr class="separator:ad9add5e221c4d78ed8c29551bd91faab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a99efd5fba7e4676640386773ede30c92"><td class="memItemLeft" align="right" valign="top"><a id="a99efd5fba7e4676640386773ede30c92"></a>
-constexpr&#160;</td><td class="memItemRight" valign="bottom"><b>operator long</b> () const</td></tr>
-<tr class="separator:a99efd5fba7e4676640386773ede30c92"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab9d99acf3e72a9e2d28fdc39d67c569a"><td class="memItemLeft" align="right" valign="top"><a id="ab9d99acf3e72a9e2d28fdc39d67c569a"></a>
-constexpr&#160;</td><td class="memItemRight" valign="bottom"><b>operator bool</b> () const</td></tr>
-<tr class="separator:ab9d99acf3e72a9e2d28fdc39d67c569a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a11d34754385a44cebab797e1ae7eacf0"><td class="memItemLeft" align="right" valign="top"><a id="a11d34754385a44cebab797e1ae7eacf0"></a>
-constexpr&#160;</td><td class="memItemRight" valign="bottom"><b>operator unsigned char</b> () const</td></tr>
-<tr class="separator:a11d34754385a44cebab797e1ae7eacf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ccf38efc67dd3dc87d211a574ac1937"><td class="memItemLeft" align="right" valign="top"><a id="a5ccf38efc67dd3dc87d211a574ac1937"></a>
-constexpr&#160;</td><td class="memItemRight" valign="bottom"><b>operator signed char</b> () const</td></tr>
-<tr class="separator:a5ccf38efc67dd3dc87d211a574ac1937"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac1c51c05044006791317be0dec714c4f"><td class="memItemLeft" align="right" valign="top"><a id="ac1c51c05044006791317be0dec714c4f"></a>
-constexpr&#160;</td><td class="memItemRight" valign="bottom"><b>operator short unsigned int</b> () const</td></tr>
-<tr class="separator:ac1c51c05044006791317be0dec714c4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abfd7b155b5734a2555b3c22cab2203fd"><td class="memItemLeft" align="right" valign="top"><a id="abfd7b155b5734a2555b3c22cab2203fd"></a>
-constexpr&#160;</td><td class="memItemRight" valign="bottom"><b>operator short int</b> () const</td></tr>
-<tr class="separator:abfd7b155b5734a2555b3c22cab2203fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2fe9c7cb790fac7d2f65d7bda48612ed"><td class="memItemLeft" align="right" valign="top"><a id="a2fe9c7cb790fac7d2f65d7bda48612ed"></a>
-constexpr&#160;</td><td class="memItemRight" valign="bottom"><b>operator unsigned int</b> () const</td></tr>
-<tr class="separator:a2fe9c7cb790fac7d2f65d7bda48612ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e465f16e25bd443279ae0a83bc57269"><td class="memItemLeft" align="right" valign="top"><a id="a8e465f16e25bd443279ae0a83bc57269"></a>
-constexpr&#160;</td><td class="memItemRight" valign="bottom"><b>operator long unsigned int</b> () const</td></tr>
-<tr class="separator:a8e465f16e25bd443279ae0a83bc57269"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a306b4d7bb176aa38dbfec95f129853a8"><td class="memItemLeft" align="right" valign="top"><a id="a306b4d7bb176aa38dbfec95f129853a8"></a>
-constexpr&#160;</td><td class="memItemRight" valign="bottom"><b>operator long long unsigned int</b> () const</td></tr>
-<tr class="separator:a306b4d7bb176aa38dbfec95f129853a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af6110afc7ed5b88734c76a12b328d889"><td class="memItemLeft" align="right" valign="top"><a id="af6110afc7ed5b88734c76a12b328d889"></a>
-constexpr&#160;</td><td class="memItemRight" valign="bottom"><b>operator long long int</b> () const</td></tr>
-<tr class="separator:af6110afc7ed5b88734c76a12b328d889"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab493c00de3dc1ea8e3cf0b85316427f8"><td class="memItemLeft" align="right" valign="top"><a id="ab493c00de3dc1ea8e3cf0b85316427f8"></a>
-constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (double d)</td></tr>
-<tr class="separator:ab493c00de3dc1ea8e3cf0b85316427f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af58776b2348d772e1abd4382d6e1d12c"><td class="memItemLeft" align="right" valign="top"><a id="af58776b2348d772e1abd4382d6e1d12c"></a>
-constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (float f)</td></tr>
-<tr class="separator:af58776b2348d772e1abd4382d6e1d12c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af16f7798397a89e900c3a3362046550f"><td class="memItemLeft" align="right" valign="top"><a id="af16f7798397a89e900c3a3362046550f"></a>
-constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (<a class="el" href="classposit_1_1_posit.html">Posit</a> p)</td></tr>
-<tr class="separator:af16f7798397a89e900c3a3362046550f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><div class="groupHeader">Special Functions</div></td></tr>
-<tr class="memitem:abde5164a6460f5b629b62b64d76b0130"><td class="memItemLeft" align="right" valign="top"><a id="abde5164a6460f5b629b62b64d76b0130"></a>
-constexpr <a class="el" href="classposit_1_1_posit.html">Posit</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceposit.html#abde5164a6460f5b629b62b64d76b0130">log</a> () const</td></tr>
-<tr class="memdesc:abde5164a6460f5b629b62b64d76b0130"><td class="mdescLeft">&#160;</td><td class="mdescRight">log_e(x) = log2(x)/log2(e) <br /></td></tr>
-<tr class="separator:abde5164a6460f5b629b62b64d76b0130"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad131a847f55350af2a4c5968dc33dfbf"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="classposit_1_1_posit.html">Posit</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceposit.html#ad131a847f55350af2a4c5968dc33dfbf">pseudosigmoid</a> () const</td></tr>
-<tr class="separator:ad131a847f55350af2a4c5968dc33dfbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae302ee175a4d585e44a2fd52270aa75"><td class="memItemLeft" align="right" valign="top"><a id="aae302ee175a4d585e44a2fd52270aa75"></a>
-constexpr <a class="el" href="classposit_1_1_posit.html">Posit</a>&#160;</td><td class="memItemRight" valign="bottom"><b>pseudosigmoidalt</b> () const</td></tr>
-<tr class="separator:aae302ee175a4d585e44a2fd52270aa75"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0f1b760c021ad3ae90831abe219ccd91"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="classposit_1_1_posit.html">Posit</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceposit.html#a0f1b760c021ad3ae90831abe219ccd91">elu</a> () const</td></tr>
-<tr class="separator:a0f1b760c021ad3ae90831abe219ccd91"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c8e947e5f385a5686b724101e554f9b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classposit_1_1_posit.html">Posit</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceposit.html#a0c8e947e5f385a5686b724101e554f9b">pseudosoftplus</a> () const</td></tr>
-<tr class="separator:a0c8e947e5f385a5686b724101e554f9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a4e0e1fb7cb6a7b9eabd79731d011b5"><td class="memItemLeft" align="right" valign="top"><a id="a9a4e0e1fb7cb6a7b9eabd79731d011b5"></a>
-constexpr <a class="el" href="classposit_1_1_posit.html">Posit</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceposit.html#a9a4e0e1fb7cb6a7b9eabd79731d011b5">pseudotanh</a> (int k) const</td></tr>
-<tr class="memdesc:a9a4e0e1fb7cb6a7b9eabd79731d011b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">k*sigm(k*x)-k/2 <br /></td></tr>
-<tr class="separator:a9a4e0e1fb7cb6a7b9eabd79731d011b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b05d6bd1fdbcf49d3d800731f9c91dd"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="classposit_1_1_posit.html">Posit</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceposit.html#a4b05d6bd1fdbcf49d3d800731f9c91dd">pseudotanh</a> () const</td></tr>
-<tr class="separator:a4b05d6bd1fdbcf49d3d800731f9c91dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aafdb4a8a5d629a1ba819d7acd32621db"><td class="memItemLeft" align="right" valign="top"><a id="aafdb4a8a5d629a1ba819d7acd32621db"></a>
-constexpr <a class="el" href="classposit_1_1_posit.html">Posit</a>&#160;</td><td class="memItemRight" valign="bottom"><b>fastTanh</b> () const</td></tr>
-<tr class="separator:aafdb4a8a5d629a1ba819d7acd32621db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a544c927d73791b200983a9e4ad4ac883"><td class="memItemLeft" align="right" valign="top"><a id="a544c927d73791b200983a9e4ad4ac883"></a>
-constexpr <a class="el" href="classposit_1_1_posit.html">Posit</a>&#160;</td><td class="memItemRight" valign="bottom"><b>fastELU</b> () const</td></tr>
-<tr class="separator:a544c927d73791b200983a9e4ad4ac883"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64543aee308bf1e6932e625c52fcd913"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="classposit_1_1_posit.html">Posit</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceposit.html#a64543aee308bf1e6932e625c52fcd913">one_minus_ur</a> () const</td></tr>
-<tr class="separator:a64543aee308bf1e6932e625c52fcd913"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The posit namespace provies wrapped access to cppPosit. </p>
@@ -410,168 +343,57 @@ constexpr <a class="el" href="classposit_1_1_posit.html">Posit</a>&#160;</td><td
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="aaf755906105a7b4e9cfbbff0ae91e023"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaf755906105a7b4e9cfbbff0ae91e023">&#9670;&nbsp;</a></span>as_float_bin()</h2>
+<a id="a87f62b84d1a71e1a3038ee87e49e1f57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87f62b84d1a71e1a3038ee87e49e1f57">&#9670;&nbsp;</a></span>abs()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;class T , int totalbits, int esbits, class FT , PositSpec positspec&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr uint32_t posit::as_float_bin </td>
+          <td class="memname"><a class="el" href="classposit_1_1_posit.html">Posit</a>&lt;T,totalbits,esbits,FT,positspec&gt; posit::abs </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
+          <td class="paramtype">const <a class="el" href="classposit_1_1_posit.html">Posit</a>&lt; T, totalbits, esbits, FT, positspec &gt; &amp;&#160;</td>
+          <td class="paramname"><em>z</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="posit_8h_source.html#l01044">1044</a> of file <a class="el" href="posit_8h_source.html">posit.h</a>.</p>
+<p>Absolute value of <a class="el" href="classposit_1_1_posit.html" title="Posit value type Stores the posit in the LSB part of the holding type T as signed integer.">Posit</a>. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td></td></tr>
+    <tr><td class="paramname">totalbits</td><td></td></tr>
+    <tr><td class="paramname">esbits</td><td></td></tr>
+    <tr><td class="paramname">FT</td><td></td></tr>
+    <tr><td class="paramname">positspec</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">z</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>CONSTEXPR14 abs </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="posit_8h_source.html#l01471">1471</a> of file <a class="el" href="posit_8h_source.html">posit.h</a>.</p>
 
 </div>
 </div>
-<a id="a0f1b760c021ad3ae90831abe219ccd91"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0f1b760c021ad3ae90831abe219ccd91">&#9670;&nbsp;</a></span>elu()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr <a class="el" href="classposit_1_1_posit.html">Posit</a> posit::elu </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>(exp(z)-1) -mul2(c1(inv(div2(addinvbit(div2(-x)))))) </p>
-
-<p class="definition">Definition at line <a class="el" href="posit_8h_source.html#l01122">1122</a> of file <a class="el" href="posit_8h_source.html">posit.h</a>.</p>
-
-</div>
-</div>
-<a id="a64543aee308bf1e6932e625c52fcd913"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a64543aee308bf1e6932e625c52fcd913">&#9670;&nbsp;</a></span>one_minus_ur()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr <a class="el" href="classposit_1_1_posit.html">Posit</a> posit::one_minus_ur </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>\breif If the value is in the unit interval [0,1] it returns 1-x if esbits=0 </p>
-
-<p class="definition">Definition at line <a class="el" href="posit_8h_source.html#l01160">1160</a> of file <a class="el" href="posit_8h_source.html">posit.h</a>.</p>
-
-</div>
-</div>
-<a id="ad131a847f55350af2a4c5968dc33dfbf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad131a847f55350af2a4c5968dc33dfbf">&#9670;&nbsp;</a></span>pseudosigmoid()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr <a class="el" href="classposit_1_1_posit.html">Posit</a> posit::pseudosigmoid </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>1/(exp(-x)+1) div2(addinvbit(div2(x))) </p>
-
-<p class="definition">Definition at line <a class="el" href="posit_8h_source.html#l01106">1106</a> of file <a class="el" href="posit_8h_source.html">posit.h</a>.</p>
-
-</div>
-</div>
-<a id="a0c8e947e5f385a5686b724101e554f9b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0c8e947e5f385a5686b724101e554f9b">&#9670;&nbsp;</a></span>pseudosoftplus()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classposit_1_1_posit.html">Posit</a> posit::pseudosoftplus </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>ln(1+exp(x)) x &gt; .... = x x = 0 == ??? <br  />
- </p>
-
-<p class="definition">Definition at line <a class="el" href="posit_8h_source.html#l01128">1128</a> of file <a class="el" href="posit_8h_source.html">posit.h</a>.</p>
-
-</div>
-</div>
-<a id="a4b05d6bd1fdbcf49d3d800731f9c91dd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4b05d6bd1fdbcf49d3d800731f9c91dd">&#9670;&nbsp;</a></span>pseudotanh()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr <a class="el" href="classposit_1_1_posit.html">Posit</a> posit::pseudotanh </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>2 sigm(2x)-1 = 1-(2 sigm(2x)) 2sigm(2x) is [-2,2] ==&gt; [-1,1] 2(0.5-sigm(2x)) </p>
-
-<p class="definition">Definition at line <a class="el" href="posit_8h_source.html#l01138">1138</a> of file <a class="el" href="posit_8h_source.html">posit.h</a>.</p>
-
-</div>
-</div>
-<a id="aa3941a776c665e080754597695186ad0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa3941a776c665e080754597695186ad0">&#9670;&nbsp;</a></span>reciprocate()</h2>
+<a id="a0fdf36d408be62a54199a37445704075"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0fdf36d408be62a54199a37445704075">&#9670;&nbsp;</a></span>operator&lt;&lt;()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -579,18 +401,109 @@ constexpr <a class="el" href="classposit_1_1_posit.html">Posit</a>&#160;</td><td
 template&lt;class T , int totalbits, int esbits, class FT , PositSpec positspec&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">class <a class="el" href="classposit_1_1_posit.html">posit::Posit</a> posit::reciprocate </td>
+          <td class="memname">std::ostream&amp; posit::operator&lt;&lt; </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>ons</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classposit_1_1_posit.html">Posit</a>&lt; T, totalbits, esbits, FT, positspec &gt; const &amp;&#160;</td>
+          <td class="paramname"><em>o</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Plot Posits using manipulator for expresssing differently </p>
+
+<p class="definition">Definition at line <a class="el" href="posit_8h_source.html#l01148">1148</a> of file <a class="el" href="posit_8h_source.html">posit.h</a>.</p>
+
+</div>
+</div>
+<a id="a80b18d69e7a6152c1a9004f8ad1ed44f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80b18d69e7a6152c1a9004f8ad1ed44f">&#9670;&nbsp;</a></span>pack_posit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , int totalbits, int esbits, class FT , PositSpec positspec&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classposit_1_1_posit.html">Posit</a>&lt; T, totalbits, esbits, FT, positspec &gt; posit::pack_posit </td>
+          <td>(</td>
+          <td class="paramtype">const typename <a class="el" href="classposit_1_1_posit.html">Posit</a>&lt; T, totalbits, esbits, FT, positspec &gt;::BackendT &amp;&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>returns 1/x as Level 1 Special Cases: zero should give positive infinity, if present, nan otherwise nan should be nan, if present +inf/-inf should give zero, if present before0,after0 should give infinity, if present </p>
-<dl class="section return"><dt>Returns</dt><dd>constexpr <a class="el" href="classposit_1_1_posit.html" title="Posit value type Stores the posit in the LSB part of the holding type T as signed integer.">Posit</a> </dd></dl>
+<p>Packs from Backend to <a class="el" href="classposit_1_1_posit.html" title="Posit value type Stores the posit in the LSB part of the holding type T as signed integer.">Posit</a> passing throught the <a class="el" href="structposit_1_1_unpacked.html" title="signed infinity and nan require the extra X bit">Unpacked</a> form. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td></td></tr>
+    <tr><td class="paramname">totalbits</td><td></td></tr>
+    <tr><td class="paramname">esbits</td><td></td></tr>
+    <tr><td class="paramname">FT</td><td></td></tr>
+    <tr><td class="paramname">positspec</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>CONSTEXPR14 pack_posit </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="posit_8h_source.html#l00609">609</a> of file <a class="el" href="posit_8h_source.html">posit.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="posit_8h_source.html#l01435">1435</a> of file <a class="el" href="posit_8h_source.html">posit.h</a>.</p>
+
+</div>
+</div>
+<a id="a2836fe21e3c283a8c6ee90422fdc5d9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2836fe21e3c283a8c6ee90422fdc5d9c">&#9670;&nbsp;</a></span>unpack_posit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , int totalbits, int esbits, class FT , PositSpec positspec&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">auto posit::unpack_posit </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classposit_1_1_posit.html">Posit</a>&lt; T, totalbits, esbits, FT, positspec &gt; &amp;&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td> -&gt;  typename <a class="el" href="classposit_1_1_posit.html">Posit</a>&lt; T, totalbits, esbits, FT, positspec &gt;::BackendT</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Unpack from Backend to <a class="el" href="classposit_1_1_posit.html" title="Posit value type Stores the posit in the LSB part of the holding type T as signed integer.">Posit</a> passing throught the <a class="el" href="structposit_1_1_unpacked.html" title="signed infinity and nan require the extra X bit">Unpacked</a> form. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td></td></tr>
+    <tr><td class="paramname">totalbits</td><td></td></tr>
+    <tr><td class="paramname">esbits</td><td></td></tr>
+    <tr><td class="paramname">FT</td><td></td></tr>
+    <tr><td class="paramname">positspec</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>CONSTEXPR14 pack_posit </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="posit_8h_source.html#l01453">1453</a> of file <a class="el" href="posit_8h_source.html">posit.h</a>.</p>
 
 </div>
 </div>

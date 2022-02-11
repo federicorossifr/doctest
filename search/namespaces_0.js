@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['detail_5fleast_298',['detail_least',['../namespacedetail__least.html',1,'']]]
+  ['detail_5fleast_300',['detail_least',['../namespacedetail__least.html',1,'']]]
 ];

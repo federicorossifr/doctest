@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['half_54',['half',['../classposit_1_1_posit.html#aa74901d65b448dc6c4c60ab12b1f7bd2',1,'posit::Posit']]],
+  ['half_54',['half',['../classposit_1_1_posit.html#aff36a443551aa0a3561fe0cd8bde56ca',1,'posit::Posit']]],
   ['half_5ftrait_55',['half_trait',['../structhalf__trait.html',1,'']]],
   ['halffloat_56',['halffloat',['../structhalffloat.html',1,'']]],
   ['halffloatalt_57',['halffloatalt',['../structhalffloatalt.html',1,'']]],

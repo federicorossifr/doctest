@@ -169,7 +169,7 @@ static constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><b>with
 static constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><b>withsignedinf</b> = <a class="el" href="structposit_1_1_posit_spec_trait.html">PositSpecTrait</a>&lt;positspec_&gt;::withsignedinf</td></tr>
 <tr class="separator:adf1db7237a6668f92571c8db3d8a19a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a778d2e3f10ea56ae392d3faccda80d1c"><td class="memItemLeft" align="right" valign="top"><a id="a778d2e3f10ea56ae392d3faccda80d1c"></a>
-static constexpr POSIT_UTYPE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structposit_1_1_posit_trait.html#a778d2e3f10ea56ae392d3faccda80d1c">POSIT_TWICEMASK</a> = (POSIT_INVERTBIT | (POIST_ONEHELPER &lt;&lt; totalbits - 3) ) &lt;&lt; 1</td></tr>
+static constexpr POSIT_UTYPE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structposit_1_1_posit_trait.html#a778d2e3f10ea56ae392d3faccda80d1c">POSIT_TWICEMASK</a> = (POSIT_INVERTBIT | (POSIT_ONEHELPER &lt;&lt; totalbits - 3) ) &lt;&lt; 1</td></tr>
 <tr class="memdesc:a778d2e3f10ea56ae392d3faccda80d1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">mask for bits of signed part (1[*] 0[totalbits-1]) <br /></td></tr>
 <tr class="separator:a778d2e3f10ea56ae392d3faccda80d1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Helper Sizes &lt;br&gt;</div></td></tr>
@@ -192,14 +192,14 @@ static constexpr POSIT_UTYPE&#160;</td><td class="memItemRight" valign="bottom">
 <tr><td colspan="2"><div class="groupHeader">Specific Bits</div></td></tr>
 <tr><td colspan="2"><div class="groupText"><p>non posit bits in holder </p>
 </div></td></tr>
-<tr class="memitem:a5a72adef75dbf7216d6062e1b5772657"><td class="memItemLeft" align="right" valign="top"><a id="a5a72adef75dbf7216d6062e1b5772657"></a>
-static constexpr POSIT_UTYPE&#160;</td><td class="memItemRight" valign="bottom"><b>POIST_ONEHELPER</b> = 1</td></tr>
-<tr class="separator:a5a72adef75dbf7216d6062e1b5772657"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8a47d657dc2d7a4dfb5400e53baa6fd"><td class="memItemLeft" align="right" valign="top"><a id="ae8a47d657dc2d7a4dfb5400e53baa6fd"></a>
+static constexpr POSIT_UTYPE&#160;</td><td class="memItemRight" valign="bottom"><b>POSIT_ONEHELPER</b> = 1</td></tr>
+<tr class="separator:ae8a47d657dc2d7a4dfb5400e53baa6fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acfc14193a176cfedd0d263cbfb834a8c"><td class="memItemLeft" align="right" valign="top"><a id="acfc14193a176cfedd0d263cbfb834a8c"></a>
-static constexpr POSIT_UTYPE&#160;</td><td class="memItemRight" valign="bottom"><b>POSIT_INVERTBIT</b> = (POIST_ONEHELPER&lt;&lt;(totalbits-2))</td></tr>
+static constexpr POSIT_UTYPE&#160;</td><td class="memItemRight" valign="bottom"><b>POSIT_INVERTBIT</b> = (POSIT_ONEHELPER&lt;&lt;(totalbits-2))</td></tr>
 <tr class="separator:acfc14193a176cfedd0d263cbfb834a8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa58f28961e93391f5c6afdb8302eb301"><td class="memItemLeft" align="right" valign="top"><a id="aa58f28961e93391f5c6afdb8302eb301"></a>
-static constexpr POSIT_UTYPE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structposit_1_1_posit_trait.html#aa58f28961e93391f5c6afdb8302eb301">POSIT_MSB</a> = POIST_ONEHELPER&lt;&lt;(totalbits-1)</td></tr>
+static constexpr POSIT_UTYPE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structposit_1_1_posit_trait.html#aa58f28961e93391f5c6afdb8302eb301">POSIT_MSB</a> = POSIT_ONEHELPER&lt;&lt;(totalbits-1)</td></tr>
 <tr class="memdesc:aa58f28961e93391f5c6afdb8302eb301"><td class="mdescLeft">&#160;</td><td class="mdescRight">bit for 1/x <br /></td></tr>
 <tr class="separator:aa58f28961e93391f5c6afdb8302eb301"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acdeb43f4bd09d406b3ace950e63b3740"><td class="memItemLeft" align="right" valign="top"><a id="acdeb43f4bd09d406b3ace950e63b3740"></a>
@@ -207,7 +207,7 @@ static constexpr POSIT_UTYPE&#160;</td><td class="memItemRight" valign="bottom">
 <tr class="memdesc:acdeb43f4bd09d406b3ace950e63b3740"><td class="mdescLeft">&#160;</td><td class="mdescRight">most significant bit of posit: (0[*] 1 0[totalbits-1]) <br /></td></tr>
 <tr class="separator:acdeb43f4bd09d406b3ace950e63b3740"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a58e39be81d441f9346957f8e38055671"><td class="memItemLeft" align="right" valign="top"><a id="a58e39be81d441f9346957f8e38055671"></a>
-static constexpr POSIT_UTYPE&#160;</td><td class="memItemRight" valign="bottom"><b>POSIT_HOLDER_MSB</b> = POIST_ONEHELPER&lt;&lt;(<a class="el" href="structposit_1_1_posit_trait.html#acf4774a55a5756d51d483f2c804e77a9">POSIT_HOLDER_SIZE</a>-1)</td></tr>
+static constexpr POSIT_UTYPE&#160;</td><td class="memItemRight" valign="bottom"><b>POSIT_HOLDER_MSB</b> = POSIT_ONEHELPER&lt;&lt;(<a class="el" href="structposit_1_1_posit_trait.html#acf4774a55a5756d51d483f2c804e77a9">POSIT_HOLDER_SIZE</a>-1)</td></tr>
 <tr class="separator:a58e39be81d441f9346957f8e38055671"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ea11f4cd2ee7a702c068baa965bce82"><td class="memItemLeft" align="right" valign="top"><a id="a4ea11f4cd2ee7a702c068baa965bce82"></a>
 static constexpr POSIT_STYPE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structposit_1_1_posit_trait.html#a4ea11f4cd2ee7a702c068baa965bce82">POSIT_REG_SCALE</a> = 1&lt;&lt;esbits</td></tr>
@@ -215,7 +215,7 @@ static constexpr POSIT_STYPE&#160;</td><td class="memItemRight" valign="bottom">
 <tr class="separator:a4ea11f4cd2ee7a702c068baa965bce82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Masks</div></td></tr>
 <tr class="memitem:a7690b769570f0150b65eeec3dd91ebce"><td class="memItemLeft" align="right" valign="top"><a id="a7690b769570f0150b65eeec3dd91ebce"></a>
-static constexpr POSIT_UTYPE&#160;</td><td class="memItemRight" valign="bottom"><b>POSIT_ESP_MASK</b> = (POIST_ONEHELPER&lt;&lt; esbits)-1</td></tr>
+static constexpr POSIT_UTYPE&#160;</td><td class="memItemRight" valign="bottom"><b>POSIT_ESP_MASK</b> = (POSIT_ONEHELPER&lt;&lt; esbits)-1</td></tr>
 <tr class="separator:a7690b769570f0150b65eeec3dd91ebce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c3cda0dbaadf1eb9f761c0fb000648d"><td class="memItemLeft" align="right" valign="top"><a id="a4c3cda0dbaadf1eb9f761c0fb000648d"></a>
 static constexpr POSIT_UTYPE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structposit_1_1_posit_trait.html#a4c3cda0dbaadf1eb9f761c0fb000648d">POSIT_MASK</a> = ((<a class="el" href="structposit_1_1_posit_trait.html#aa58f28961e93391f5c6afdb8302eb301">POSIT_MSB</a>-1)|(<a class="el" href="structposit_1_1_posit_trait.html#aa58f28961e93391f5c6afdb8302eb301">POSIT_MSB</a>))</td></tr>
